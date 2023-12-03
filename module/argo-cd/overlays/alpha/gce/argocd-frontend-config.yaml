@@ -1,0 +1,9 @@
+apiVersion: networking.gke.io/v1beta1
+kind: FrontendConfig
+metadata:
+  name: argocd-frontend-config
+  namespace: argocd
+spec:
+  redirectToHttps:
+    enabled: true
+  # sslPolicy: <tls-policy-name> # optional; see https://fabianlee.org/2022/03/07/gcp-enabling-ssl-policies-on-https-lb-ingress/

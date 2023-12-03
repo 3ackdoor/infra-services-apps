@@ -1,0 +1,22 @@
+---
+
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: alpha
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  project: alpha
+  source:
+    repoURL: https://bitbucket.org/gitops-learning/infra-services-apps
+    targetRevision: HEAD
+    path: controller
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: alpha
+  syncPolicy:
+    automated:
+      selfHeal: true
+      prune: true
