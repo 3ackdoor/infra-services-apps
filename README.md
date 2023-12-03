@@ -7,7 +7,7 @@
 git clone -b v2.8.4 https://github.com/argoproj/argo-cd.git
 ```
 
-## Steps to repeat every startup of Workstation VM (Manual)
+## Steps to repeat every startup of VM Workstation (Manual)
 
 ```bash
 eval $(ssh-agent) &&
