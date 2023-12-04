@@ -3,7 +3,7 @@
 ## Prerequisites
 
 ```bash
-# Clone argocd project from official repo at the same directory path level as infra-services-apps (change directory out of this infra-services-apps)
+# Clone argocd project from official repo at the same directory path level as infra-services-apps
 git clone -b v2.8.4 https://github.com/argoproj/argo-cd.git
 ```
 
