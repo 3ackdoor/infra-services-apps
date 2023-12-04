@@ -16,8 +16,8 @@ gcloud secrets versions access 1 --secret="SSH_PRIVATE_KEY_LOCAL_CONTROL_PLANE" 
 
 gcloud secrets versions access 1 --secret="GCP_CREDS_LOCAL_CONTROL_PLANE" --project=gitops-learning01 --out-file=/home/user/.config/gcloud/root-ca.json >/dev/null &&
 
-git config --global --replace-all user.email "anewnursery@gmail.com" &&
-git config --global --replace-all user.name "Anew Eiamsuwansai" &&
+git config --global --replace-all user.email "your_git@email.com" &&
+git config --global --replace-all user.name "Your Name" &&
 
 minikube start &&
 
